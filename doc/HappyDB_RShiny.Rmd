@@ -71,6 +71,11 @@ hm_data <- hm_data %>%
                                         months_3 = "3m", hours_24 = "24h"))
 ```
 
+```{r export data}
+write_csv(hm_data, "../output/extra_detail_moments.csv")
+```
+
+
 ```{r}
 datatable(hm_data)
 ```
